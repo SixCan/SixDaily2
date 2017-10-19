@@ -1,9 +1,9 @@
 package ca.six.daily
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import ca.six.daily.core.BaseActivity
 
-class HomeActivity : AppCompatActivity() {
+class HomeActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
