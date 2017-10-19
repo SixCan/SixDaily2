@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="ca.six.daily">
 
-    <application
+    <application android:name=".core.BaseApp"
         android:label="@string/app_name"
         android:icon="@drawable/ic_launcher"
         android:roundIcon="@drawable/ic_launcher_round"

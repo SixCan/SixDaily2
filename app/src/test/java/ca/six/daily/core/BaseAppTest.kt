@@ -2,7 +2,8 @@ package ca.six.daily.core
 
 import android.os.Build
 import ca.six.daily.BuildConfig
-import org.junit.Assert.assertNotNull
+import ca.six.daily.R
+import org.junit.Assert.*
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.robolectric.RobolectricTestRunner
@@ -16,6 +17,14 @@ class BaseAppTest {
     fun testContextNotNull() {
         assertNotNull(BaseApp.app)
     }
+
+
+    @Test
+    fun testContextObjectIsRight(){
+        var app = BaseApp.app.getString(R.string.app_name)
+        assertEquals("SixDaily2", app)
+    }
+
 
 
 }
